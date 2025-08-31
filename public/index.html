@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dazzling quotes</title>
+</head>
+<body>
+    <div class="main">
+        <header class="header" id="navbar">
+            <div class="navigation">
+                <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+                <label for="navi-toggle" class="navigation__button">
+                    <span class="navigation__icon">&nbsp;</span>
+                </label>
+
+
+                <nav class="navigation__nav" id="nav">
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a href="#" class="navigation__link" id="generate">Generate quotes</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link" id="browes">Browse quotes</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link favorites" id="favorites">Favorites</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link" id="about">About Us</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link">Log out</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <h1 class="heading">Dazzling Quotes</h1>
+
+            <div class="container">
+                <div class="favorite">
+                    <svg class="svg__icon favorites" id="favories">
+                        <use xlink:href="img/heart-329.svg"></use>
+                    </svg>
+                </div>
+                <div class="profile">
+                    <img src="img/p3.jpg" alt="User" class="user">
+                    <span>Moss</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-body" id="main_2" style="display: none;">
+            <div class="prompt-container">
+                <p class="description">Describe your quote briefly</p>
+                <textarea name="prompt" id="tag" class="prompt" placeholder="Enter your Descrption here . . . "></textarea>
+                <button class="btn" id="btn_1">Generate</button>
+            </div>
+            <div class="content" id="result" style="display: none;">
+                <p class="result-text">Result:</p>
+                <svg class="fav__icon" id="fav">
+                    <use xlink:href="img/black-heart-outline-3512.svg" id="favUse"></use>
+                </svg>
+                <p class="quote" id="quote"></p>
+                <p class="author" id="author"></p>
+                <svg class="like__icon" id="like">
+                    <use xlink:href="img/thumbs-up-11229.svg" id="likeUse"></use>
+                </svg>
+                <svg class="dislike__icon" id="dislike">
+                    <use xlink:href="img/thumbs-down-14918.svg" id="dislikeUse"></use>
+                </svg>
+                <svg class="refresh__icon" id="refresh">
+                    <use xlink:href="img/arrows-refresh-2847.svg"></use>
+                </svg>
+            </div>
+            
+        </main>
+
+        <main id="main_1">
+            <div class="main-body" id="append">
+                <div class="search-bar">
+                    <input type="text" class="search" placeholder="Search by tag or author" id="searchBox">
+                    <svg class="search__icon" id="searchIcon">
+                        <use href="img/sprite.svg#icon-magnifying-glass"></use>
+                    </svg>
+                </div>
+                <p class="loading" id="loading">Loading ...</p>
+                <button class="btn" id="btn">Load more</button>
+            </div>
+        </main>
+
+        <main id="main_3" style="display: none;">
+            <div class="main-body" id="main">
+                <h1 class="fav_heading">Favorites</h1>
+                <div class="content">
+                    <svg class="fav__icon">
+                        <use href="img/heart-329 - Copy.svg" id="use"></use>
+                    </svg>
+                    <p class="quote">Some bullshit. This is just a placeholder of those bullshits ill fill later  Some bullshit. This is just a placeholder of those bullshits ill fill laterSome bullshit. This is just a placeholder of those bullshits ill fill laterSome bullshit. This is just a placeholder of those bullshits ill fill laterSome bullshit. This is just a placeholder of those bullshits ill fill later</p>
+                    <p class="author">By Mr.Shakespeare</p>
+                    <svg class="like__icon">
+                        <use href="img/thumbs-up-11229.svg" id="like"></use>
+                    </svg>
+                    <svg class="dislike__icon">
+                        <use href="img/thumbs-down-14918.svg" id="dislike"></use>
+                    </svg>
+                </div>
+            </div>
+        </main>
+
+        <main id="main_4" style="display: none;">
+            <div class="about_us">
+                <h2 class="about_heading">About Us</h2>
+                <p class="about_description">This is a dummy project dedicated to showcasing quotes with a user-friendly interface. Done by yours truly inorder to participate in the bet...</p>
+            </div>
+        </main>
+
+        <footer>&copy;2025 All rights reserved</footer>
+
+    </div>
+<script src="main.js"></script>
+</body>
+
+</html>
